@@ -1,0 +1,55 @@
+
+
+
+.main_div{
+    display:flex;
+    flex-direction: column; 
+    align-items: center;
+    margin: 0px 110px;
+    padding:90px 0px ;
+    color: aliceblue;
+    height: 620px;
+    border-radius: 50px;
+    width: auto;
+    background-position-x:-80px;
+    background-image:  url("~/public/assets/background.jpg");
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+
+.main_title{
+    font-family: 'Karla', sans-serif;    letter-spacing: 1px;
+    font-size: 64px;
+    font-weight: 400;
+}
+.subtitle{
+    font-family: 'Karla', sans-serif;    letter-spacing: 1px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 300;
+    opacity: 0.8;
+}
+.button{
+    margin-top:120px;
+    background-color: rgb(182, 12, 255);
+    background-position: center;
+    
+}
+.button:hover{
+    border:solid 2px #C353DD;
+    color: transparent;
+    transition: 0.5s;
+    background-image:url("~/src/assets/ethereum.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: aliceblue;
+}
+
+@media (max-width:1600px){
+    .main_div{
+        height:auto;
+    }
+    .main_title{
+        font-size: 54px;
+    }
+}

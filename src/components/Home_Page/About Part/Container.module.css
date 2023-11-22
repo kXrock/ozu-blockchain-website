@@ -1,0 +1,20 @@
+.container{
+    border-top: 1px solid rgba(161, 160, 160, 0.5);
+    padding: 100px 0px 0px 0px;
+    display: flex;
+    margin: 150px 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    height: 500px;
+    width: auto;
+    border-radius: 20px;
+}
+
+@media (max-width:1600px){
+    .img{
+        height:400px;
+    }
+}

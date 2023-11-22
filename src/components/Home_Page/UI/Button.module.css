@@ -1,0 +1,26 @@
+.button{
+    display: flex;
+    margin: 10px;
+    border-radius: 20px;
+    float: right;
+    color: aliceblue;
+    background-color: #1c375a;
+    justify-content: center;
+    align-items: center;
+    padding: 16.5px 27.5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13.2px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border: 2px solid floralwhite ;
+}
+
+.button:hover{
+    background-color: transparent;
+    color: #1c375a;
+    transition: 0.2s;
+    font-weight: 400;
+    border:2px solid #1c375a; 
+}

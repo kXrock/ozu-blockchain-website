@@ -1,0 +1,47 @@
+
+.navbar{
+    padding: 15px 100px 15px 100px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.Buttons{
+    display:inline-flex;
+    margin-left:auto ;
+}
+.twitter{
+     background-image:  url("~/src/assets/twitter.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:25px 30px;
+    
+}
+
+.twitter:hover{
+    background-color:#7fb1f2;
+    border: 1px solid #ffffff;
+}
+
+
+.b1{
+    background-color:#1c375a;   
+}
+
+.img{
+    background-color: aliceblue;
+    height: 0px;
+}
+.wallet{
+    background-color: rgb(182, 12, 255);
+}
+.wallet:hover{
+    border: solid 2px rgb(182, 12, 255);
+    color: rgb(182, 12, 255);
+}
+
+@media (min-width:1500px) {
+    .navbar{
+        padding: 15px 50px;
+    }
+}
