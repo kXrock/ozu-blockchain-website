@@ -5,7 +5,6 @@
     padding-top :100px;
     align-items: center;
     flex-direction: column;
-    
     border-top: 1px solid rgba(161, 160, 160, 0.5);
 }
 
@@ -13,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     margin: 40px 80px;
+    
 }
 
 .h5 {
@@ -42,49 +42,107 @@
     font-family: 'Montserrat', sans-serif;
     
 }
+  .cardfront1,
+  .cardback1,
+  .cardfront2,
+  .cardback2{
+    padding-top: 30px;
+    padding-right: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  
 
-
-
- .team_container1:hover{
+.card1:hover{
     box-shadow: 0px 0px;
-    background-image:url("~/src/assets/dev_background.png") ;
-    background-size: contain;
+    transition: 1s;
+}
+.card2:hover{
+    box-shadow: 0px 0px;
+    transition: 1s;
+}
+.card3:hover{
+    box-shadow: 0px 0px;
+    transition: 1s;
+}
+ .cardfront1:hover{
+    background-image:url("~/public/assets/dev_background.png") ;
+    background-size:90%;
     background-repeat: no-repeat;
     background-position-y:50px ;
     transition: 1s;
     
 }
-.team_container1:hover >.p{
+.cardfront1:hover >.p{
     color: transparent;
     transition: 0.5;
 }
-.team_container2:hover{
-    box-shadow: 0px 0px;
-    background-image:url("~/src/assets/research_back.png") ;
-    background-size: contain;
+.cardfront2:hover{
+    
+    background-image:url("~/public/assets/research_back.png") ;
+    background-size: 90%;
     background-repeat: no-repeat;
     background-position-y:50px ;
     transition: 1s;
     
 }
-.team_container2:hover >.p{
+.cardfront2:hover >.p{
     color: transparent;
     transition: 0.5;
 }
 
-.team_container3:hover{
-    box-shadow: 0px 0px;
-    background-image:url("~/src/assets/market_back.png") ;
-    background-size: contain;
+.cardfront3:hover{
+    background-image:url("~/public/assets/market_back.png") ;
+    background-size: 90%;
     background-repeat: no-repeat;
     background-position-y:50px ;
     transition: 1s;
-    
 }
-.team_container3:hover >.p{
+.cardfront3:hover >.p{
     color: transparent;
     transition: 0;
 }
+.card1,.card2,.card3{
+    height:auto;
+    width:200%;
+    border: solid 1px #1c375a;
+    border-radius: 20px;
+    padding: 20px 20px;
+    box-shadow:15px 10px #aeaeae;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    margin: 0px 50px;
+  }
+  
+  .card1.flipped1 {
+    transform: rotateY(180deg);
+  }
+  .card2.flipped2 {
+    transform: rotateY(180deg);
+  }
+  .card3.flipped3 {
+    transform: rotateY(180deg);
+  }
+  
+  .cardfront1,.cardfront2,.cardfront3 {
+    background-color: transparent;
+  }
+  
+  .cardback1,.cardback2,.cardback3 {
+    background-color: transparent;
+    transform: rotateY(180deg);
+  }
+
+  .cardback p{
+    color: #131312;
+  }
+  
 
 @media(max-width:1600px){
     .main_div{

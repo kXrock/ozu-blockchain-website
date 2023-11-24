@@ -15,7 +15,7 @@ const Mission = props=>{
     return(
         <div className={classes.mission}>
             <img src="assets/mission_p.jpg"  alt="/" className={classes.img} data-aos="fade-right"></img>
-            <Info_mission/>
+            <Info_mission ref={props.ref1}/>
         </div>
     );
 }

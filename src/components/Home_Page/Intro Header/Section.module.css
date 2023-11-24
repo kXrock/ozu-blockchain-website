@@ -39,7 +39,7 @@
     border:solid 2px #C353DD;
     color: transparent;
     transition: 0.5s;
-    background-image:url("~/src/assets/ethereum.png") ;
+    background-image:url("~/public/assets/ethereum.png") ;
     background-repeat: no-repeat;
     background-position: center;
     background-color: aliceblue;

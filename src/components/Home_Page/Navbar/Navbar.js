@@ -7,8 +7,8 @@ const ethers = require("ethers");
 
 
 const Navbar = (props) => {
-    
-   
+
+
     const [account, setAccount] = useState("");
     const [provider, setProvider] = useState(null);
 
@@ -33,19 +33,10 @@ const Navbar = (props) => {
 
     return (
         <div className={classes.navbar}>
-            <Titles />
+            <Titles about_ref={props.ref1} work_ref={props.work_ref} team_ref={props.team_ref} social_ref={props.ref}/>
             <div className={classes.Buttons}>
-                <a className={classes.a} href="https://twitter.com/OzUBlockchain">
-                    <Button className={classes.twitter} />
-                </a>
                 <Button className={classes.b1}>
-                    Sign In
-                </Button>
-                <Button className={classes.wallet} onClick={()=>{
-                    if (account) return;
-                    connect();
-                }} >
-                    {account ? "Connected" : "Connect Account"}
+                    a
                 </Button>
             </div>
 
@@ -53,3 +44,12 @@ const Navbar = (props) => {
 }
 
 export default Navbar;
+
+/* Connect Wallet Part
+
+<Button className={classes.wallet} onClick={()=>{
+                    if (account) return;
+                    connect();
+                }} >
+                    {account ? "Connected" : "Connect Account"}
+                </Button>*/

@@ -11,7 +11,7 @@ const Info_mission = props => {
     },[]);
 
     return (
-        <div className={classes.main_div} data-aos="fade-left">
+        <div className={classes.main_div} data-aos="fade-left" ref={props.ref1}>
             <h6 className={classes.h6}>
                 Work
             </h6>

@@ -26,18 +26,19 @@
     
 }
 
-.h3{
+.h3 {
+    transition: 2s;
     font-weight: 700;
     opacity:0.5;
     cursor: pointer;
-    
-    
+    color: #000000;
+    text-decoration:none;
 }
 
 .h3:hover{
     color:#1c375a ;
     opacity: 1;
-    transition:0.3s;
+    transition:0.5s;
 }
 
 
