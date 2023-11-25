@@ -80,20 +80,21 @@ function HomePage() {
                 <Teams />
             </div>
 
-            <div ref={ref4} style={{height:"500px"}}>
+            <div ref={ref4} style={{height:"auto",marginTop:"100px"}}>
                 
-                    <Wave fill='#f79902'
-                        paused={false}
-                        style={{ display: 'flex' }}
-                        options={{
-                            height:0,
-                            amplitude: 50,
-                            speed: 0.15,
-                            points:5
-                        }}><p>la kardeş</p>
-                            <Footer ></Footer>
-                    </Wave>
-                
+                <Wave fill='#1c375a'
+                    paused={false}
+                    style={{ display: 'flex', position: "absolute", height: "400px", display: "block", overflow: "hidden", zIndex: "-1",padding:"10px 0 0 0"}}
+                    options={{
+                        height:20,
+                        amplitude:50,
+                        speed: 0.15,
+                        points: 4
+                    }}>
+
+                </Wave>
+                <Footer>
+                </Footer>
             </div>
 
         </React.Fragment>

@@ -1,6 +1,5 @@
 .maindiv{
-    border-radius: 50px;
-    border-top: 1px solid rgba(161, 160, 160, 0.5); 
+     
     margin: 0px 250px;
     display: flex;
     flex-direction: column;
@@ -15,6 +14,8 @@
 }
 
 .logos{
+    padding-top:40px;
+    padding-bottom: 80px;
     display:flex;
     justify-content:space-between;
     width: auto;
@@ -28,17 +29,18 @@
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     opacity: 0.8;
+    color: aliceblue;
 }
 
 .text_div{
-    margin:40px 0px 25px 0px;
+    margin:100px 0px 25px 0px;
     display: flex;
     justify-content: center;
 }
 
 .last{
 
-    margin-top: 30px;
+    
     display: flex;
     justify-content: center;
     border-top: 1px solid rgba(161, 160, 160, 0.5); 
