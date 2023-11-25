@@ -84,7 +84,7 @@ function HomePage() {
                 
                 <Wave fill='#1c375a'
                     paused={false}
-                    style={{ display: 'flex', position: "absolute", height: "400px", display: "block", overflow: "hidden", zIndex: "-1",padding:"10px 0 0 0"}}
+                    style={{ display: 'flex', position: "absolute", height: "400px", display: "block", overflow: "hidden", zIndex: "-1",padding:"10px 0 0 0",opacity:"0.5"}}
                     options={{
                         height:20,
                         amplitude:50,
