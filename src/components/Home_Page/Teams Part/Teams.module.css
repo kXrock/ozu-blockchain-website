@@ -2,7 +2,7 @@
     display: flex;
     margin: 150px 250px;
     justify-content: center;
-    padding-top :100px;
+    padding-top: 100px;
     align-items: center;
     flex-direction: column;
     border-top: 1px solid rgba(161, 160, 160, 0.5);
@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     margin: 40px 80px;
-    
+
 }
 
 .h5 {
@@ -25,139 +25,180 @@
     opacity: 0.8;
 }
 
-.p{
-    
+.p {
+
     font-size: 18px;
-    font-weight:400;
+    font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     opacity: 0.9;
     letter-spacing: 0.5px;
 
 }
 
-.h3{
-    margin:5px 0;
+.h3 {
+    margin: 5px 0;
     font-size: 30px;
-    font-weight:400;
+    font-weight: 400;
     font-family: 'Montserrat', sans-serif;
-    
+
 }
-  .cardfront1,
-  .cardback1,
-  .cardfront2,
-  .cardback2{
+
+.cardfront1,
+.cardback1,
+.cardfront2,
+.cardback2 {
     padding-top: 30px;
     padding-right: 40px;
     width: 100%;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
     position: absolute;
     backface-visibility: hidden;
-  }
-  
-  
+}
 
-.card1:hover{
+.cardback1 {
+    position: absolute;
+    height: 400px;
+    margin-left: -38px;
+    margin-top:-30px;
+}
+
+.backphoto {
+    padding-top: 40px;
+   
+    height: 300px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.backsocial img{
+    padding: 5px;
+    height:40px;
+    width: 40px;
+}
+
+.card1:hover {
     box-shadow: 0px 0px;
     transition: 1s;
 }
-.card2:hover{
+
+.card2:hover {
     box-shadow: 0px 0px;
     transition: 1s;
 }
-.card3:hover{
+
+.card3:hover {
     box-shadow: 0px 0px;
     transition: 1s;
 }
- .cardfront1:hover{
-    background-image:url("~/public/assets/dev_background.png") ;
-    background-size:90%;
+
+.cardfront1:hover {
+    background-image: url("~/public/assets/dev_background.png");
+    background-size: 90%;
     background-repeat: no-repeat;
-    background-position-y:50px ;
+    background-position-y: 50px;
     transition: 1s;
-    
+
 }
-.cardfront1:hover >.p{
+
+.cardfront1:hover>.p {
     color: transparent;
     transition: 0.5;
 }
-.cardfront2:hover{
-    
-    background-image:url("~/public/assets/research_back.png") ;
+
+.cardfront2:hover {
+
+    background-image: url("~/public/assets/research_back.png");
     background-size: 90%;
     background-repeat: no-repeat;
-    background-position-y:50px ;
+    background-position-y: 50px;
     transition: 1s;
-    
+
 }
-.cardfront2:hover >.p{
+
+.cardfront2:hover>.p {
     color: transparent;
     transition: 0.5;
 }
 
-.cardfront3:hover{
-    background-image:url("~/public/assets/market_back.png") ;
+.cardfront3:hover {
+    background-image: url("~/public/assets/market_back.png");
     background-size: 90%;
     background-repeat: no-repeat;
-    background-position-y:50px ;
+    background-position-y: 50px;
     transition: 1s;
 }
-.cardfront3:hover >.p{
+
+.cardfront3:hover>.p {
     color: transparent;
     transition: 0;
 }
-.card1,.card2,.card3{
-    height:auto;
-    width:200%;
+
+.card1,
+.card2,
+.card3 {
+    height: auto;
+    width: 200%;
     border: solid 1px #1c375a;
     border-radius: 20px;
     padding: 20px 20px;
-    box-shadow:15px 10px #aeaeae;
+    box-shadow: 15px 10px #aeaeae;
     perspective: 1000px;
     transform-style: preserve-3d;
     transition: transform 1s;
     margin: 0px 50px;
-  }
-  
-  .card1.flipped1 {
-    transform: rotateY(180deg);
-  }
-  .card2.flipped2 {
-    transform: rotateY(180deg);
-  }
-  .card3.flipped3 {
-    transform: rotateY(180deg);
-  }
-  
-  .cardfront1,.cardfront2,.cardfront3 {
-    background-color: transparent;
-  }
-  
-  .cardback1,.cardback2,.cardback3 {
-    background-color: transparent;
-    transform: rotateY(180deg);
-  }
+}
 
-  .cardback p{
+.card1.flipped1 {
+    transform: rotateY(180deg);
+}
+
+.card2.flipped2 {
+    transform: rotateY(180deg);
+}
+
+.card3.flipped3 {
+    transform: rotateY(180deg);
+}
+
+.cardfront1,
+.cardfront2,
+.cardfront3 {
+    background-color: transparent;
+}
+
+.cardback1,
+.cardback2,
+.cardback3 {
+    background-color: transparent;
+    transform: rotateY(180deg);
+}
+
+.cardback p {
     color: #131312;
-  }
-  
+}
 
-@media(max-width:1600px){
-    .main_div{
+
+@media(max-width:1600px) {
+    .main_div {
         margin: 150px 100px;
     }
-    .p{
-        font-size:16px;
+
+    .p {
+        font-size: 16px;
     }
-    .h6{
+
+    .h6 {
         font-size: 12px;
     }
-    .h3{
+
+    .h3 {
         font-size: 30px;
     }
-    .button{
+
+    .button {
         font-size: 12px;
         padding: 15px 20px;
     }
