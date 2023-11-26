@@ -9,6 +9,8 @@ import Button from "./UI/Button";
 import classes1 from "../Home_Page/UI/Titles.module.css";
 import classes from "../Home_Page/Navbar/Navbar.module.css";
 import Wave from 'react-wavify';
+import classes2 from "./Intro Header/Section.module.css";
+
 
 function HomePage() {
     const ref1 = useRef(null);
@@ -63,8 +65,8 @@ function HomePage() {
 
                 </ul>
                 <div className={classes.Buttons}>
-                    <Button className={classes.b1}>
-                        a
+                    <Button className={classes.button}>
+                        Mint NFT
                     </Button>
                 </div>
 
