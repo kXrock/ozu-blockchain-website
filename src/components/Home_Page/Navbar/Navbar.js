@@ -36,7 +36,7 @@ const Navbar = (props) => {
             <Titles about_ref={props.ref1} work_ref={props.work_ref} team_ref={props.team_ref} social_ref={props.ref}/>
             <div className={classes.Buttons}>
                 <Button className={classes.b1}>
-                    a
+                    
                 </Button>
             </div>
 
