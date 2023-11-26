@@ -7,20 +7,23 @@
 }
 
 .img{
+    padding: 0 10px;
+    border: aliceblue 1px solid;
+    padding: 5px;
     border-radius: 50px;
-    height:80px;
-    width:80px ;
+    height:60px;
+    width:60px ;
     color: transparent;
-    background-color: aliceblue;
+    background-color:whitesmoke;
 }
 
-.logos{
+.img:hover{
+    background-color: transparent;
+    transition: 0.6s;
+}
 
-    padding-bottom:21px;
-    display:flex;
-    justify-content:space-between;
-    width: auto;
-    
+.sociallogos a{   
+    padding: 0 10px;
 }
 .h5{
     margin: 0px 0px 15px 0px;

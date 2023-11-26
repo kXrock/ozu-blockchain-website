@@ -10,10 +10,10 @@ const Footer = props => {
                     <h5 className={classes.h5} style={{textTransform:"none",fontWeight:"600"}}>Clubs.ozublockchain@ozu.edu.tr</h5>
                     <img src={"assets/main_logo.jpg"} alt="" className={classes.img}></img>
                 </div>
-                <div>
+                <div className={classes.sociallogos}>
                     <div className={classes.text_div}><h5 className={classes.h5}>Socials</h5></div>
                     <a href="https://twitter.com/OzUBlockchain">
-                        <img className={classes.img} src="/assets/twitter-sign.png" alt=""></img>
+                        <img className={classes.img} src="/assets/twitter.png" alt=""></img>
                     </a>
                     <a href="https://medium.com/ozu-blockchain">
                         <img className={classes.img} src="/assets/medium.png" alt=""></img>
@@ -35,7 +35,7 @@ const Footer = props => {
             <div className={classes.logos}>
 
             </div>
-            <div className={classes.last}>
+            <div className={classes.last} style={{marginTop:"42px"}}>
                 <h5 className={classes.h5} style={{ fontWeight: "500" }}>©2023 OZU BLOCKCHAIN | Tüm hakları saklıdır.</h5>
             </div>
         </div>
