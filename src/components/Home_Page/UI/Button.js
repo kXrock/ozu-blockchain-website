@@ -4,7 +4,7 @@ import classes from "./Button.module.css";
 
 
 const Button = props => {
-    return (<button className={` ${classes.button} ${props.className}`} type="submit" onClick={props.onClick}>
+    return (<button className={` ${classes.button} ${props.className}`} type="submit" onClick={props.onClick} style={props.style}>
             {props.children}
         </button>);
 
