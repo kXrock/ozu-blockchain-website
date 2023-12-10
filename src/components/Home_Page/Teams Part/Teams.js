@@ -33,9 +33,9 @@ const Team = props => {
                         <Button className={classes.b1} style={{ top: "25px", position: "relative" }} onClick={handleFlip1}>Members</Button>
                     </div>
                     <div className={classes.cardback1}>
-                        <img src="/assets/back_icon.png" onClick={handleFlip1} style={{height:"30px", width:"auto",cursor:"pointer",marginRight:"230px"}}></img>
+                        <img src="/assets/back_icon.png" onClick={handleFlip1} style={{height:"30px", width:"30px",cursor:"pointer",marginRight:"230px",display:"inline-flex"}}></img>
                         <div className={classes.backphoto}>
-                            <img src="/assets/keremkaya.jpeg" style={{ width: "auto", height: "230px", borderRadius: "50px" }}></img>
+                            <img className={classes.personp} src="/assets/keremkaya.jpeg" style={{ width: "auto", borderRadius: "50px" }}></img>
                             <p className={classes.p} style={{marginBottom:"0"}}>Kerem Kaya</p>
                             <div className={classes.backsocial}>
                                 <a href="https://www.linkedin.com/in/kerem-kaya-1574b0227/">
