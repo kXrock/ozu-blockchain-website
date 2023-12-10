@@ -57,7 +57,7 @@
     backface-visibility: hidden;
 }
 
-.cardback1 {
+.cardback1,.cardback2 {
     position: absolute;
     height: 400px;
     margin-left: -38px;

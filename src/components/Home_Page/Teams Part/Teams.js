@@ -35,7 +35,7 @@ const Team = props => {
                     <div className={classes.cardback1}>
                         <img src="/assets/back_icon.png" onClick={handleFlip1} style={{height:"30px", width:"30px",cursor:"pointer",marginRight:"230px",display:"inline-flex"}}></img>
                         <div className={classes.backphoto}>
-                            <img className={classes.personp} src="/assets/keremkaya.jpeg" style={{ width: "auto", borderRadius: "50px" }}></img>
+                            <img className={classes.personp} src="/assets/01.jpg" style={{ width: "auto", borderRadius: "50px",background:"transparant" }}></img>
                             <p className={classes.p} style={{marginBottom:"0"}}>Kerem Kaya</p>
                             <div className={classes.backsocial}>
                                 <a href="https://www.linkedin.com/in/kerem-kaya-1574b0227/">
@@ -57,8 +57,20 @@ const Team = props => {
                         <Button className={classes.b1} style={{ top: "25px", position: "relative" }} onClick={handleFlip2} >Members</Button>
                     </div>
                     <div className={classes.cardback2}>
-                        <div></div>
-                        <Button onClick={handleFlip2} style={{ top: "30px", position: "relative" }}>back</Button>
+                    <img src="/assets/back_icon.png" onClick={handleFlip2} style={{height:"30px", width:"30px",cursor:"pointer",marginRight:"230px",display:"inline-flex"}}></img>
+                        <div className={classes.backphoto}>
+                            <img className={classes.personp} src="/assets/01.jpg" style={{ width: "auto", borderRadius: "50px",background:"transparant" }}></img>
+                            <p className={classes.p} style={{marginBottom:"0"}}>Kerem Kaya</p>
+                            <div className={classes.backsocial}>
+                                <a href="https://www.linkedin.com/in/kerem-kaya-1574b0227/">
+                                    <img className={classes.img} src="/assets/linkedin.png" alt=""></img>
+                                </a>
+                                <a href="https://github.com/kXrock">
+                                    <img className={classes.img} src="/assets/github.png" alt=""></img>
+                                </a>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
 
