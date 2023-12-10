@@ -19,7 +19,7 @@ const Footer = props => {
                         <img className={classes.img} src="/assets/medium.png" alt=""></img>
                     </a>
                     <a href="https://www.linkedin.com/company/ozublockchain/">
-                        <img className={classes.img} src="/assets/linkedin-logo.png" alt=""></img>
+                        <img className={classes.img} src="/assets/linkedin.png" alt=""></img>
                     </a>
                     <a href="https://discord.gg/9afxhHdr">
                         <img className={classes.img} src="/assets/discord.png" alt=""></img>
