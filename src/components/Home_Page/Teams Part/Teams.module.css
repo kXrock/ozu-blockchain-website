@@ -46,7 +46,7 @@
 .cardfront1,
 .cardback1,
 .cardfront2,
-.cardback2 {
+.cardback2{
     padding-top: 30px;
     padding-right: 40px;
     width: 100%;
@@ -57,14 +57,15 @@
     backface-visibility: hidden;
 }
 
-.cardback1,.cardback2 {
+.cardback1,.cardback2{
     position: absolute;
     height: 400px;
     margin-left: -38px;
     margin-top:-30px;
 }
 
-.backphoto {
+ .backphoto {
+    backface-visibility: hidden;
     padding-top: 40px;
     height: 300px;
     width: 250px;
