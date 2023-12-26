@@ -14,7 +14,7 @@ body {
   
   .swiper-slide {
     text-align: center;
-    font-size: 18px;
+    font-size: 1px;
     background: #fff;
   
     /* Center slide text vertically */
@@ -35,4 +35,8 @@ body {
 
 .swiper-button-next {
     color: #000; 
+}
+
+:root {
+  --swiper-theme-color: #000;
 }

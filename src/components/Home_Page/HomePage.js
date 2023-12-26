@@ -84,16 +84,15 @@ function HomePage() {
 
             <div ref={ref4} style={{height:"auto",marginTop:"100px"}}>
                 
-                <Wave fill='#1c375a'
+                <Wave fill="#1c375a"
                     paused={false}
-                    style={{ display: 'flex', position: "absolute", height: "350px", display: "block", overflow: "hidden", zIndex: "-1",padding:"10px 0 0 0",opacity:"0.7"}}
+                    style={{  position: "absolute", height: "350px", display: "block", overflow: "hidden", zIndex: "-1",padding:"10px 0 0 0",opacity:"0.7"}}
                     options={{
                         height:20,
                         amplitude:50,
                         speed: 0.15,
                         points:4
                     }}>
-
                 </Wave>
                 <Footer/>
             </div>
