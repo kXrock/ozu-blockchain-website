@@ -1,15 +1,11 @@
-body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-  }
+
   
   .swiper {
     width: 100%;
     height: 100%;
+    margin-bottom: -50px;
+    margin-right:-33px;
+    transition: 0.1s;
   }
   
   .swiper-slide {
@@ -36,7 +32,8 @@ body {
 .swiper-button-next {
     color: #000; 
 }
-
-:root {
-  --swiper-theme-color: #000;
+ .swiper-pagination-bullet{
+  width: 5px;
+  height: 5px;
 }
+

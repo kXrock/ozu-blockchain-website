@@ -4,6 +4,7 @@ import classes from "./Teams.module.css";
 import Team_Container from "../UI/Team_Container";
 import Button from "../UI/Button";
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import swiperclasses from "./Swiper.module.css";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -71,23 +72,27 @@ const Team = props => {
                     <div className={classes.cardback2}>
                         <img src="/assets/back_icon.png" onClick={handleFlip2} style={{ height: "30px", width: "30px", cursor: "pointer", marginRight: "230px", display: "inline-flex" }}></img>
                         <div className={classes.backphoto} style={{padding:"0px"}}>
-                            <Swiper className={classes.swiper} modules={[Navigation, Pagination, Scrollbar, A11y]}
+                            <Swiper className={swiperclasses.swiper} modules={[Navigation, Pagination, Scrollbar, A11y]}
                                 slidesPerView={1}
                                 navigation
+                                speed={500}
                                 pagination={{ clickable: true }}
                                 onSwiper={(swiper) => console.log(swiper)}
                                 onSlideChange={() => console.log('slide change')}
                                 style={{  display: "flex", height: "400px", width: "240px" }}>
-                                <SwiperSlide style={{ backgroundColor: "Yellow", transform: "rotateY(180deg)" }}>
-                                    <img className={classes.personp} src="/assets/01.jpg" style={{ width: "auto", borderRadius: "50px", background: "transparant", paddingBottom: "100px" }}></img>
-                                    <p className={classes.p} style={{ marginBottom: "0" }}>Kerem Kaya</p>
-                                    <div className={classes.backsocial}>
-                                        <a href="https://www.linkedin.com/in/kerem-kaya-1574b0227/">
-                                            <img className={classes.img} src="/assets/linkedin.png" alt=""></img>
-                                        </a>
-                                        <a href="https://github.com/kXrock">
-                                            <img className={classes.img} src="/assets/github.png" alt=""></img>
-                                        </a>
+                                <SwiperSlide >
+                                <div className={classes.backphoto}>
+                                        <img className={classes.personp} src="/assets/01.jpg" style={{ width: "auto", borderRadius: "50px", background: "transparant" }}></img>
+                                        <p className={classes.p} style={{ marginBottom: "0" }}>Kerem Kaya</p>
+                                        <div className={classes.backsocial}>
+                                            <a href="https://www.linkedin.com/in/kerem-kaya-1574b0227/">
+                                                <img className={classes.img} src="/assets/linkedin.png" alt=""></img>
+                                            </a>
+                                            <a href="https://github.com/kXrock">
+                                                <img className={classes.img} src="/assets/github.png" alt=""></img>
+                                            </a>
+                                        </div>
+
                                     </div>
 
                                 </SwiperSlide>

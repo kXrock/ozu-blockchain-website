@@ -1,6 +1,9 @@
 *{
   box-sizing: border-box;
 }
+:root {
+  --swiper-theme-color: #0e6982;
+}
 
 html{
   background-color: #e0e0e0;
