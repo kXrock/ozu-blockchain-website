@@ -29,7 +29,7 @@
     color: red; 
 }
 
-.swiper-button-next {
+.swiper .swiper-button-next {
     color: #000; 
 }
  .swiper-pagination-bullet{

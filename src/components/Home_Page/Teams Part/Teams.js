@@ -71,7 +71,7 @@ const Team = props => {
                     </div>
                     <div className={classes.cardback2}>
                         <img src="/assets/back_icon.png" onClick={handleFlip2} style={{ height: "30px", width: "30px", cursor: "pointer", marginRight: "230px", display: "inline-flex" }}></img>
-                        <div className={classes.backphoto} style={{padding:"0px"}}>
+                        <div className={classes.backphoto} style={{ padding: "0px" }}>
                             <Swiper className={swiperclasses.swiper} modules={[Navigation, Pagination, Scrollbar, A11y]}
                                 slidesPerView={1}
                                 navigation
@@ -79,9 +79,10 @@ const Team = props => {
                                 pagination={{ clickable: true }}
                                 onSwiper={(swiper) => console.log(swiper)}
                                 onSlideChange={() => console.log('slide change')}
-                                style={{  display: "flex", height: "400px", width: "240px" }}>
+                                style={{ display: "flex", height: "400px", width: "240px","--swiper-pagination-color": "#1c375a",
+                                    "--swiper-navigation-color": "#1c375a"}}>
                                 <SwiperSlide >
-                                <div className={classes.backphoto}>
+                                    <div className={classes.backphoto}>
                                         <img className={classes.personp} src="/assets/01.jpg" style={{ width: "auto", borderRadius: "50px", background: "transparant" }}></img>
                                         <p className={classes.p} style={{ marginBottom: "0" }}>Kerem Kaya</p>
                                         <div className={classes.backsocial}>
